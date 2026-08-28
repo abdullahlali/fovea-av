@@ -3,6 +3,10 @@ build/
 cmake-build-*/
 out/
 compile_commands.json
+*.o
+*.a
+*.so
+*.dylib
 
 # IDE
 .idea/
