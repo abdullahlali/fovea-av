@@ -8,16 +8,37 @@ Fovea is an interactive autonomy visualization platform. It converts camera inpu
 
 This project is an independent portfolio build inspired by in-vehicle autonomy trust UX. It is not affiliated with Tesla or xAI.
 
+# Fovea
+
+**Autonomy, in focus.**
+
+Fovea is an interactive autonomy visualization platform. It converts camera input into a structured driving scene with predictive trajectories, confidence-aware perception data, and Grok-powered passenger-facing explanations.
+
 ## Status
 
 | Milestone | Status |
 |-----------|--------|
-| C++ perception pipeline scaffold | ✅ v0.1.0 |
-| Scene graph + prediction ghosts | ✅ v0.1.0 |
+| C++ perception pipeline | ✅ |
+| YOLOv8 ONNX inference | ✅ |
+| Qt visualization shell | ✅ |
 | Grok narration integration | 🚧 stub |
-| Qt Quick 3D visualization shell | 🚧 planned |
 | Svelte passenger panel | 🚧 planned |
-| ONNX Runtime inference | 🚧 planned |
+
+## Run (visual app)
+
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DFOVEA_ENABLE_ONNX=ON -DFOVEA_ENABLE_QT=ON
+cmake --build build
+./build/app/fovea_app assets/test/bdd/street.jpg
+```
+
+## Run (terminal debug)
+
+```bash
+./build/core/fovea_cli assets/test/bdd/street.jpg --grok
+```
+
+See [docs/how-it-works.md](docs/how-it-works.md) for the pipeline walkthrough.
 
 ## Architecture
 
