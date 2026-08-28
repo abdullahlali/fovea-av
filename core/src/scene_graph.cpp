@@ -33,6 +33,8 @@ std::string SceneGraph::to_json(const SceneFrame& frame) const {
     std::ostringstream json;
     json << "{\n";
     json << "  \"source\": \"" << escape_json(frame.source_path) << "\",\n";
+    json << "  \"image\": {\"width\": " << frame.image.width
+         << ", \"height\": " << frame.image.height << "},\n";
     json << "  \"frame_index\": " << frame.frame_index << ",\n";
     json << "  \"detections\": [\n";
 

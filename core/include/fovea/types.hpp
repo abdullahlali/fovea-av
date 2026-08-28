@@ -32,10 +32,18 @@ struct PredictedState {
     float horizon_seconds = 2.0F;
 };
 
+struct ImageBuffer {
+    int width = 0;
+    int height = 0;
+    int channels = 0;
+    std::vector<std::uint8_t> pixels;
+};
+
 struct SceneFrame {
     std::uint64_t frame_index = 0;
     double timestamp_seconds = 0.0;
     std::string source_path;
+    ImageBuffer image;
     std::vector<Detection> detections;
     std::vector<PredictedState> predictions;
 };
