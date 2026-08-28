@@ -124,6 +124,35 @@ BoundingBox remap_bbox(const Candidate& candidate, const Letterbox& letterbox) {
     return BoundingBox{x, y, width, height};
 }
 
+bool is_driving_relevant_class(int class_id) {
+    switch (class_id) {
+        case 0:   // person
+        case 1:   // bicycle
+        case 2:   // car
+        case 3:   // motorcycle
+        case 5:   // bus
+        case 7:   // truck
+        case 9:   // traffic_light
+        case 11:  // stop_sign
+            return true;
+        default:
+            return false;
+    }
+}
+
+BoundingBox clamp_bbox(const BoundingBox& bbox, int image_width, int image_height) {
+    const float x = std::max(0.0F, bbox.x);
+    const float y = std::max(0.0F, bbox.y);
+    const float max_width = std::max(0.0F, static_cast<float>(image_width) - x);
+    const float max_height = std::max(0.0F, static_cast<float>(image_height) - y);
+    return BoundingBox{
+        x,
+        y,
+        std::min(bbox.width, max_width),
+        std::min(bbox.height, max_height),
+    };
+}
+
 }  // namespace
 
 struct InferEngine::Impl {
@@ -233,12 +262,27 @@ void run_onnx_inference(const InferEngine& engine, SceneFrame& frame) {
     frame.detections.reserve(filtered.size());
 
     std::uint32_t next_id = 1;
+    const float image_area =
+        static_cast<float>(frame.image.width * frame.image.height);
+
     for (const auto& candidate : filtered) {
+        if (!is_driving_relevant_class(candidate.class_id)) {
+            continue;
+        }
+
+        BoundingBox bbox =
+            clamp_bbox(remap_bbox(candidate, letterbox), frame.image.width, frame.image.height);
+
+        const float box_area = bbox.width * bbox.height;
+        if (image_area > 0.0F && (box_area / image_area) > config.max_box_area_ratio) {
+            continue;
+        }
+
         Detection detection{};
         detection.id = next_id++;
         detection.label = std::string(kCocoLabels[static_cast<std::size_t>(candidate.class_id)]);
         detection.confidence = candidate.confidence;
-        detection.bbox = remap_bbox(candidate, letterbox);
+        detection.bbox = bbox;
         frame.detections.push_back(detection);
     }
 }
