@@ -1,0 +1,32 @@
+# Build
+build/
+cmake-build-*/
+out/
+compile_commands.json
+
+# IDE
+.idea/
+.vscode/
+*.user
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Models (large binaries — use scripts/download_models.sh)
+models/*.onnx
+models/*.pt
+
+# Environment
+.env
+.env.*
+
+# Dependencies
+panel/node_modules/
+panel/.svelte-kit/
+panel/build/
+
+# Test outputs
+assets/output/
+*.log
