@@ -8,7 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 option(FOVEA_BUILD_TESTS "Build unit tests" OFF)
 option(FOVEA_ENABLE_QT "Build Qt visualization shell" OFF)
-option(FOVEA_ENABLE_ONNX "Enable ONNX Runtime inference" OFF)
+option(FOVEA_ENABLE_ONNX "Enable ONNX Runtime inference" ON)
 
 add_subdirectory(core)
 
