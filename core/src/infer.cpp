@@ -33,6 +33,9 @@ void InferEngine::run(SceneFrame& frame) const {
 }
 
 #if !defined(FOVEA_HAS_ONNX)
+// Complete type required so unique_ptr can destroy Impl in stub builds (e.g. CI without ONNX).
+struct InferEngine::Impl {};
+
 InferEngine::InferEngine(InferConfig config)
     : config_(std::move(config)), impl_(nullptr) {}
 
