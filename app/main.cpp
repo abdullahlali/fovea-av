@@ -10,12 +10,23 @@
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
 
-    const std::string image_path =
-        argc > 1 ? argv[1] : "assets/test/bdd/street.jpg";
+    std::string image_path = "assets/test/bdd/street.jpg";
+    bool enable_grok = false;
+
+    for (int i = 1; i < argc; ++i) {
+        const std::string arg = argv[i];
+        if (arg == "--grok") {
+            enable_grok = true;
+        } else if (arg.rfind('-', 0) != 0) {
+            image_path = arg;
+        }
+    }
 
     try {
         fovea::Pipeline pipeline;
-        const auto result = pipeline.process_image(image_path);
+        fovea::PipelineOptions options{};
+        options.enable_grok = enable_grok;
+        const auto result = pipeline.process_image(image_path, options);
 
         SceneWindow window(result);
         window.show();

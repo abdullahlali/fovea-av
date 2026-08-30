@@ -52,6 +52,7 @@ struct PipelineMetrics {
     double capture_ms = 0.0;
     double infer_ms = 0.0;
     double predict_ms = 0.0;
+    double grok_ms = 0.0;
     double total_ms = 0.0;
 };
 

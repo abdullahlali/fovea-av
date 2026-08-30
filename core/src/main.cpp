@@ -49,13 +49,14 @@ int main(int argc, char* argv[]) {
         std::cout << "predict_ms: " << result.metrics.predict_ms << "\n";
         std::cout << "total_ms: " << result.metrics.total_ms << "\n";
 
-        if (enable_grok) {
-            std::cout << "\n--- grok ---\n";
-            if (!result.grok.error.empty()) {
-                std::cout << "warning: " << result.grok.error << "\n";
-            }
-            std::cout << result.grok.text << "\n";
+    if (enable_grok) {
+        std::cout << "\n--- grok ---\n";
+        if (!result.grok.error.empty()) {
+            std::cout << "warning: " << result.grok.error << "\n";
         }
+        std::cout << result.grok.text << "\n";
+        std::cout << "grok_ms: " << result.metrics.grok_ms << "\n";
+    }
     } catch (const std::exception& error) {
         std::cerr << "error: " << error.what() << "\n";
         return 1;

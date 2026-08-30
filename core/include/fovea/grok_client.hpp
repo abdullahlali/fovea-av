@@ -6,8 +6,9 @@ namespace fovea {
 
 struct GrokConfig {
     std::string api_key_env = "XAI_API_KEY";
-    std::string model = "grok-4.6";
+    std::string model = "grok-4.20-0309-non-reasoning";
     std::string base_url = "https://api.x.ai/v1";
+    int max_tokens = 120;
 };
 
 struct GrokRequest {
