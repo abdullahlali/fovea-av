@@ -5,6 +5,7 @@ set(FOVEA_CORE_SOURCES
     src/infer.cpp
     src/grok_client.cpp
     src/pipeline.cpp
+    src/tracker.cpp
 )
 
 set(FOVEA_CORE_HEADERS
@@ -16,6 +17,7 @@ set(FOVEA_CORE_HEADERS
     include/fovea/pipeline.hpp
     include/fovea/types.hpp
     include/fovea/coco_labels.hpp
+    include/fovea/tracker.hpp
 )
 
 add_library(fovea_core STATIC ${FOVEA_CORE_SOURCES} ${FOVEA_CORE_HEADERS})
@@ -41,6 +43,20 @@ if(FOVEA_ENABLE_ONNX)
         message(STATUS "Fovea: ONNX Runtime enabled")
     else()
         message(WARNING "ONNX Runtime not found. Building with stub inference.")
+    endif()
+endif()
+
+if(FOVEA_ENABLE_VIDEO)
+    find_package(OpenCV QUIET)
+    if(OpenCV_FOUND)
+        target_sources(fovea_core PRIVATE src/video_capture.cpp)
+        target_sources(fovea_core PUBLIC include/fovea/video_capture.hpp)
+        target_compile_definitions(fovea_core PUBLIC FOVEA_HAS_VIDEO=1)
+        target_link_libraries(fovea_core PUBLIC ${OpenCV_LIBS})
+        target_include_directories(fovea_core PUBLIC ${OpenCV_INCLUDE_DIRS})
+        message(STATUS "Fovea: OpenCV video capture enabled")
+    else()
+        message(WARNING "OpenCV not found. Video replay disabled.")
     endif()
 endif()
 

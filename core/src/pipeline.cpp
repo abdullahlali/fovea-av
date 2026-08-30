@@ -17,20 +17,24 @@ double elapsed_ms(const std::chrono::steady_clock::time_point& start,
 
 Pipeline::Pipeline() = default;
 
-PipelineResult Pipeline::process_image(const std::string& image_path,
+void Pipeline::reset_tracking() const {
+    tracker_.reset();
+}
+
+PipelineResult Pipeline::process_frame(SceneFrame frame,
                                        const PipelineOptions& options) const {
     PipelineResult result{};
+    result.frame = std::move(frame);
 
     const auto total_start = std::chrono::steady_clock::now();
-
-    const auto capture_start = std::chrono::steady_clock::now();
-    result.frame = capture_.load_frame(CaptureRequest{.image_path = image_path});
-    const auto capture_end = std::chrono::steady_clock::now();
 
     const auto infer_start = std::chrono::steady_clock::now();
     infer_.run(result.frame);
     const auto infer_end = std::chrono::steady_clock::now();
 
+    if (options.enable_tracking) {
+        tracker_.update(result.frame, result.frame.timestamp_seconds);
+    }
     scene_graph_.update(result.frame);
 
     const auto predict_start = std::chrono::steady_clock::now();
@@ -48,16 +52,39 @@ PipelineResult Pipeline::process_image(const std::string& image_path,
 
     const auto total_end = std::chrono::steady_clock::now();
 
-    result.metrics.capture_ms = elapsed_ms(capture_start, capture_end);
     result.metrics.infer_ms = elapsed_ms(infer_start, infer_end);
     result.metrics.predict_ms = elapsed_ms(predict_start, predict_end);
     result.metrics.total_ms = elapsed_ms(total_start, total_end);
 
-    if (options.print_json) {
-        // Printed by CLI for now.
-    }
-
     return result;
 }
+
+PipelineResult Pipeline::process_image(const std::string& image_path,
+                                       const PipelineOptions& options) const {
+    const auto capture_start = std::chrono::steady_clock::now();
+    SceneFrame frame = capture_.load_frame(CaptureRequest{.image_path = image_path});
+    const auto capture_end = std::chrono::steady_clock::now();
+
+    reset_tracking();
+    PipelineResult result = process_frame(std::move(frame), options);
+    result.metrics.capture_ms = elapsed_ms(capture_start, capture_end);
+    result.metrics.total_ms += result.metrics.capture_ms;
+    return result;
+}
+
+#if defined(FOVEA_HAS_VIDEO)
+PipelineResult Pipeline::process_video_frame(const VideoCapture& video,
+                                             int frame_index,
+                                             const PipelineOptions& options) const {
+    const auto capture_start = std::chrono::steady_clock::now();
+    SceneFrame frame = video.read_frame_at(frame_index);
+    const auto capture_end = std::chrono::steady_clock::now();
+
+    PipelineResult result = process_frame(std::move(frame), options);
+    result.metrics.capture_ms = elapsed_ms(capture_start, capture_end);
+    result.metrics.total_ms += result.metrics.capture_ms;
+    return result;
+}
+#endif
 
 }  // namespace fovea

@@ -1,5 +1,6 @@
 # Build
 build/
+build-ci/
 cmake-build-*/
 out/
 compile_commands.json
@@ -30,7 +31,10 @@ models/*.pt
 panel/node_modules/
 panel/.svelte-kit/
 panel/build/
+panel/dist/
 
 # Test outputs
 assets/output/
+assets/test/dashcam/*.mp4
+assets/test/dashcam/*.source.mp4
 *.log
