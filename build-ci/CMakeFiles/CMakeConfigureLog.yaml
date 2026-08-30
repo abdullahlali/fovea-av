@@ -1,0 +1,3576 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/Users/abdullahali/.pyenv/shims/uname"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/uname"
+      - "/opt/homebrew/opt/openjdk/bin/uname"
+      - "/usr/local/opt/openjdk@17/bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 23.6.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/Users/abdullahali/.pyenv/shims/gmake"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/gmake"
+      - "/opt/homebrew/opt/openjdk/bin/gmake"
+      - "/usr/local/opt/openjdk@17/bin/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/opt/homebrew/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/Library/Apple/usr/bin/gmake"
+      - "/Library/TeX/texbin/gmake"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/gmake"
+      - "/Users/abdullahali/.cargo/bin/gmake"
+      - "/Users/abdullahali/.local/bin/gmake"
+      - "/usr/local/lib/node_modules/gmake"
+      - "/Users/abdullahali/.npm-global/bin/gmake"
+      - "/Users/abdullahali/.pyenv/shims/make"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/make"
+      - "/opt/homebrew/opt/openjdk/bin/make"
+      - "/usr/local/opt/openjdk@17/bin/make"
+      - "/opt/homebrew/bin/make"
+      - "/opt/homebrew/sbin/make"
+      - "/usr/local/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/Users/abdullahali/.pyenv/shims/c++"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/c++"
+      - "/opt/homebrew/opt/openjdk/bin/c++"
+      - "/usr/local/opt/openjdk@17/bin/c++"
+      - "/opt/homebrew/bin/c++"
+      - "/opt/homebrew/sbin/c++"
+      - "/usr/local/bin/c++"
+      - "/System/Cryptexes/App/usr/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/4.4.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:323 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
+        # 1 "apple-sdk.cpp"
+        # 1 "<built-in>" 1
+        # 1 "<built-in>" 3
+        # 439 "<built-in>" 3
+        # 1 "<command line>" 1
+        # 1 "<built-in>" 2
+        # 1 "apple-sdk.cpp" 2
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 86 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 87 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 206 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
+        # 177 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 178 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 179 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 207 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 2 "apple-sdk.cpp" 2
+        
+        
+      Found apple sysroot: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/usr/bin/objcopy"
+      - "/Users/abdullahali/.pyenv/shims/objcopy"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/objcopy"
+      - "/opt/homebrew/opt/openjdk/bin/objcopy"
+      - "/usr/local/opt/openjdk@17/bin/objcopy"
+      - "/opt/homebrew/bin/objcopy"
+      - "/opt/homebrew/sbin/objcopy"
+      - "/usr/local/bin/objcopy"
+      - "/System/Cryptexes/App/usr/bin/objcopy"
+      - "/bin/objcopy"
+      - "/usr/sbin/objcopy"
+      - "/sbin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/Library/Apple/usr/bin/objcopy"
+      - "/Library/TeX/texbin/objcopy"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/objcopy"
+      - "/Users/abdullahali/.cargo/bin/objcopy"
+      - "/Users/abdullahali/.local/bin/objcopy"
+      - "/usr/local/lib/node_modules/objcopy"
+      - "/Users/abdullahali/.npm-global/bin/objcopy"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/usr/bin/readelf"
+      - "/Users/abdullahali/.pyenv/shims/readelf"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/readelf"
+      - "/opt/homebrew/opt/openjdk/bin/readelf"
+      - "/usr/local/opt/openjdk@17/bin/readelf"
+      - "/opt/homebrew/bin/readelf"
+      - "/opt/homebrew/sbin/readelf"
+      - "/usr/local/bin/readelf"
+      - "/System/Cryptexes/App/usr/bin/readelf"
+      - "/bin/readelf"
+      - "/usr/sbin/readelf"
+      - "/sbin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/Library/Apple/usr/bin/readelf"
+      - "/Library/TeX/texbin/readelf"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/readelf"
+      - "/Users/abdullahali/.cargo/bin/readelf"
+      - "/Users/abdullahali/.local/bin/readelf"
+      - "/usr/local/lib/node_modules/readelf"
+      - "/Users/abdullahali/.npm-global/bin/readelf"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/Users/abdullahali/.pyenv/shims/dlltool"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/dlltool"
+      - "/opt/homebrew/opt/openjdk/bin/dlltool"
+      - "/usr/local/opt/openjdk@17/bin/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/System/Cryptexes/App/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/Library/Apple/usr/bin/dlltool"
+      - "/Library/TeX/texbin/dlltool"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/dlltool"
+      - "/Users/abdullahali/.cargo/bin/dlltool"
+      - "/Users/abdullahali/.local/bin/dlltool"
+      - "/usr/local/lib/node_modules/dlltool"
+      - "/Users/abdullahali/.npm-global/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/usr/bin/addr2line"
+      - "/Users/abdullahali/.pyenv/shims/addr2line"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/addr2line"
+      - "/opt/homebrew/opt/openjdk/bin/addr2line"
+      - "/usr/local/opt/openjdk@17/bin/addr2line"
+      - "/opt/homebrew/bin/addr2line"
+      - "/opt/homebrew/sbin/addr2line"
+      - "/usr/local/bin/addr2line"
+      - "/System/Cryptexes/App/usr/bin/addr2line"
+      - "/bin/addr2line"
+      - "/usr/sbin/addr2line"
+      - "/sbin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/Library/Apple/usr/bin/addr2line"
+      - "/Library/TeX/texbin/addr2line"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/addr2line"
+      - "/Users/abdullahali/.cargo/bin/addr2line"
+      - "/Users/abdullahali/.local/bin/addr2line"
+      - "/usr/local/lib/node_modules/addr2line"
+      - "/Users/abdullahali/.npm-global/bin/addr2line"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/Users/abdullahali/.pyenv/shims/tapi"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/tapi"
+      - "/opt/homebrew/opt/openjdk/bin/tapi"
+      - "/usr/local/opt/openjdk@17/bin/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/Library/Apple/usr/bin/tapi"
+      - "/Library/TeX/texbin/tapi"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/tapi"
+      - "/Users/abdullahali/.cargo/bin/tapi"
+      - "/Users/abdullahali/.local/bin/tapi"
+      - "/usr/local/lib/node_modules/tapi"
+      - "/Users/abdullahali/.npm-global/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:66 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_INSTALL_NAME_TOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "install_name_tool"
+    candidate_directories:
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    searched_directories:
+      - "/Users/abdullahali/.pyenv/shims/install_name_tool"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/install_name_tool"
+      - "/opt/homebrew/opt/openjdk/bin/install_name_tool"
+      - "/usr/local/opt/openjdk@17/bin/install_name_tool"
+      - "/opt/homebrew/bin/install_name_tool"
+      - "/opt/homebrew/sbin/install_name_tool"
+      - "/usr/local/bin/install_name_tool"
+      - "/System/Cryptexes/App/usr/bin/install_name_tool"
+    found: "/usr/bin/install_name_tool"
+    search_context:
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT"
+      binary: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1be4b/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1be4b.dir/build.make CMakeFiles/cmTC_1be4b.dir/build
+        Building CXX object CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -Wl,-v -MD -MT CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.4)
+        Target: arm64-apple-darwin23.6.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.1 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.4) default target arm64-apple-darwin23.6.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_1be4b
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1be4b.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.4)
+        Target: arm64-apple-darwin23.6.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 15.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_1be4b -L/usr/local/lib -v CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 07:38:57 Oct  4 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+        Library search paths:
+        	/usr/local/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1be4b
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:160 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/usr/local/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1be4b/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1be4b.dir/build.make CMakeFiles/cmTC_1be4b.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -Wl -v -MD -MT CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.4)]
+        ignore line: [Target: arm64-apple-darwin23.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.1 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/CMakeScratch/TryCompile-KBpfrT -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.4) default target arm64-apple-darwin23.6.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_1be4b]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1be4b.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.4)]
+        ignore line: [Target: arm64-apple-darwin23.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 15.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_1be4b -L/usr/local/lib -v CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> linker [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 15.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_1be4b -L/usr/local/lib -v CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [15.1] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_1be4b] ==> ignore
+          arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_1be4b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld 
+        Library search paths: [;/usr/local/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/usr/local/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 07:38:57 Oct  4 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    name: "CURL"
+    configs:
+      -
+        filename: "CURL.cps"
+        kind: "cps"
+      -
+        filename: "curl.cps"
+        kind: "cps"
+      -
+        filename: "CURLConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "curl-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "CURL"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/pkgRedirects/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/qt/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.pyenv/shims/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.nvm/versions/node/v16.20.0/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/openjdk/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.cargo/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.local/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/.npm-global/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/System/Library/Frameworks/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/abdullahali/Applications/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Applications/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/lib64/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/lib64/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/lib/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/lib/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/share/cps/CURL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/Xcode.app/Contents/Developer/Applications/share/cps/curl.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:189 (find_package)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    mode: "program"
+    variable: "PKG_CONFIG_EXECUTABLE"
+    description: "pkg-config executable"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pkg-config"
+      - "pkgconf"
+    candidate_directories:
+      - "/opt/homebrew/opt/qt/bin/"
+      - "/opt/homebrew/opt/qt/sbin/"
+      - "/opt/homebrew/opt/qt/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Users/abdullahali/Applications/"
+      - "/Applications/"
+      - "/Applications/Xcode.app/Contents/Applications/"
+      - "/Applications/Xcode.app/Contents/Developer/Applications/"
+    searched_directories:
+      - "/opt/homebrew/opt/qt/bin/pkg-config"
+      - "/opt/homebrew/opt/qt/bin/pkgconf"
+      - "/opt/homebrew/opt/qt/sbin/pkg-config"
+      - "/opt/homebrew/opt/qt/sbin/pkgconf"
+      - "/opt/homebrew/opt/qt/pkg-config"
+      - "/opt/homebrew/opt/qt/pkgconf"
+      - "/Users/abdullahali/.pyenv/shims/pkg-config"
+      - "/Users/abdullahali/.pyenv/shims/pkgconf"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/pkg-config"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/pkgconf"
+      - "/opt/homebrew/opt/openjdk/bin/pkg-config"
+      - "/opt/homebrew/opt/openjdk/bin/pkgconf"
+      - "/usr/local/opt/openjdk@17/bin/pkg-config"
+      - "/usr/local/opt/openjdk@17/bin/pkgconf"
+    found: "/opt/homebrew/bin/pkg-config"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Users/abdullahali/Applications"
+        - "/Applications"
+        - "/Applications/Xcode.app/Contents/Applications"
+        - "/Applications/Xcode.app/Contents/Developer/Applications"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:191 (pkg_check_modules)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    mode: "library"
+    variable: "pkgcfg_lib_PC_CURL_curl"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curl"
+    candidate_directories:
+      - "/usr/lib/"
+    searched_directories:
+      - "/usr/lib/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:765 (find_library)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:191 (pkg_check_modules)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    mode: "library"
+    variable: "pkgcfg_lib_PC_CURL_curl"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curl"
+    candidate_directories:
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:201 (find_path)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    mode: "path"
+    variable: "CURL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curl/curl.h"
+    candidate_directories:
+      - "/opt/homebrew/opt/qt/include/"
+      - "/opt/homebrew/opt/qt/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/usr/local/opt/openjdk@17/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/usr/local/lib/node_modules/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/"
+      - "/Users/abdullahali/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/opt/qt/include/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/opt/qt/curl.framework/Headers/curl.h"
+      - "/Users/abdullahali/.pyenv/shims/curl.framework/Headers/curl.h"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/opt/openjdk/bin/curl.framework/Headers/curl.h"
+      - "/usr/local/opt/openjdk@17/bin/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/bin/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/sbin/curl.framework/Headers/curl.h"
+      - "/usr/local/bin/curl.framework/Headers/curl.h"
+      - "/System/Cryptexes/App/usr/bin/curl.framework/Headers/curl.h"
+      - "/usr/bin/curl.framework/Headers/curl.h"
+      - "/bin/curl.framework/Headers/curl.h"
+      - "/usr/sbin/curl.framework/Headers/curl.h"
+      - "/sbin/curl.framework/Headers/curl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/curl.framework/Headers/curl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/curl.framework/Headers/curl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/curl.framework/Headers/curl.h"
+      - "/Library/Apple/usr/bin/curl.framework/Headers/curl.h"
+      - "/Library/TeX/texbin/curl.framework/Headers/curl.h"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/curl.framework/Headers/curl.h"
+      - "/Users/abdullahali/.cargo/bin/curl.framework/Headers/curl.h"
+      - "/Users/abdullahali/.local/bin/curl.framework/Headers/curl.h"
+      - "/usr/local/lib/node_modules/curl.framework/Headers/curl.h"
+      - "/Users/abdullahali/.npm-global/bin/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/include/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/curl.framework/Headers/curl.h"
+      - "/usr/local/include/curl.framework/Headers/curl.h"
+      - "/usr/local/curl.framework/Headers/curl.h"
+      - "/usr/include/curl.framework/Headers/curl.h"
+      - "/usr/curl.framework/Headers/curl.h"
+      - "/include/curl.framework/Headers/curl.h"
+      - "/usr/X11R6/include/curl.framework/Headers/curl.h"
+      - "/usr/X11R6/curl.framework/Headers/curl.h"
+      - "/usr/pkg/include/curl.framework/Headers/curl.h"
+      - "/usr/pkg/curl.framework/Headers/curl.h"
+      - "/opt/include/curl.framework/Headers/curl.h"
+      - "/opt/curl.framework/Headers/curl.h"
+      - "/sw/include/curl.framework/Headers/curl.h"
+      - "/sw/curl.framework/Headers/curl.h"
+      - "/opt/local/include/curl.framework/Headers/curl.h"
+      - "/opt/local/curl.framework/Headers/curl.h"
+      - "/usr/include/X11/curl.framework/Headers/curl.h"
+      - "/Users/abdullahali/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/Network/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/System/Library/Frameworks/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/opt/qt/include/curl/curl.h"
+      - "/opt/homebrew/opt/qt/curl/curl.h"
+      - "/Users/abdullahali/.pyenv/shims/curl/curl.h"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/curl/curl.h"
+      - "/opt/homebrew/opt/openjdk/bin/curl/curl.h"
+      - "/usr/local/opt/openjdk@17/bin/curl/curl.h"
+      - "/opt/homebrew/bin/curl/curl.h"
+      - "/opt/homebrew/sbin/curl/curl.h"
+      - "/usr/local/bin/curl/curl.h"
+      - "/System/Cryptexes/App/usr/bin/curl/curl.h"
+      - "/usr/bin/curl/curl.h"
+      - "/bin/curl/curl.h"
+      - "/usr/sbin/curl/curl.h"
+      - "/sbin/curl/curl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/curl/curl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/curl/curl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/curl/curl.h"
+      - "/Library/Apple/usr/bin/curl/curl.h"
+      - "/Library/TeX/texbin/curl/curl.h"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/curl/curl.h"
+      - "/Users/abdullahali/.cargo/bin/curl/curl.h"
+      - "/Users/abdullahali/.local/bin/curl/curl.h"
+      - "/usr/local/lib/node_modules/curl/curl.h"
+      - "/Users/abdullahali/.npm-global/bin/curl/curl.h"
+    found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:208 (find_library)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    mode: "library"
+    variable: "CURL_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curl"
+      - "curllib"
+      - "libcurl_imp"
+      - "curllib_static"
+      - "libcurl"
+      - "libcurl_a"
+    candidate_directories:
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/"
+      - "/usr/lib/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/"
+      - "/opt/homebrew/opt/qt/"
+      - "/opt/homebrew/opt/qt/"
+      - "/opt/homebrew/opt/qt/"
+      - "/opt/homebrew/opt/qt/"
+      - "/opt/homebrew/opt/qt/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Library/TeX/texbin/"
+      - "/Library/TeX/texbin/"
+      - "/Library/TeX/texbin/"
+      - "/Library/TeX/texbin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+    found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindCURL.cmake:223 (find_library)"
+      - "core/CMakeLists.txt:27 (find_package)"
+    mode: "library"
+    variable: "CURL_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "libcurl-d_imp"
+      - "libcurl-d"
+    candidate_directories:
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/"
+      - "/usr/lib/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/lib/"
+      - "/opt/homebrew/opt/qt/"
+      - "/opt/homebrew/opt/qt/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.pyenv/shims/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/opt/openjdk/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Library/TeX/texbin/"
+      - "/Library/TeX/texbin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.cargo/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.local/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Users/abdullahali/.npm-global/bin/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/usr/"
+      - "/opt/"
+      - "/opt/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/homebrew/opt/qt"
+      ENV{PATH}:
+        - "/Users/abdullahali/.pyenv/shims"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Applications/Cursor.app/Contents/Resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/Users/abdullahali/.nvm/versions/node/v16.20.0/bin"
+        - "/opt/homebrew/opt/openjdk/bin"
+        - "/usr/local/opt/openjdk@17/bin"
+        - "/Users/abdullahali/.cargo/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+        - "/usr/local/lib/node_modules"
+        - "/Users/abdullahali/.npm-global/bin"
+        - "/Users/abdullahali/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...

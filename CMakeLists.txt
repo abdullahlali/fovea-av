@@ -13,6 +13,7 @@ endif()
 option(FOVEA_BUILD_TESTS "Build unit tests" OFF)
 option(FOVEA_ENABLE_QT "Build Qt visualization shell" ON)
 option(FOVEA_ENABLE_ONNX "Enable ONNX Runtime inference" ON)
+option(FOVEA_ENABLE_VIDEO "Enable OpenCV video replay" ON)
 
 add_subdirectory(core)
 

@@ -1,0 +1,6 @@
+/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/edit_cache.dir
+/Users/abdullahali/Downloads/fovea-av/build-ci/CMakeFiles/rebuild_cache.dir
+/Users/abdullahali/Downloads/fovea-av/build-ci/core/CMakeFiles/fovea_core.dir
+/Users/abdullahali/Downloads/fovea-av/build-ci/core/CMakeFiles/fovea_cli.dir
+/Users/abdullahali/Downloads/fovea-av/build-ci/core/CMakeFiles/edit_cache.dir
+/Users/abdullahali/Downloads/fovea-av/build-ci/core/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/abdullahali/Downloads/fovea-av/build-ci/cmake_install.cmake",
+		"/Users/abdullahali/Downloads/fovea-av/build-ci/core/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

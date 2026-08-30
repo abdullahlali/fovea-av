@@ -25,7 +25,9 @@ std::string escape_json(const std::string& value) {
 
 void SceneGraph::update(SceneFrame& frame) const {
     for (std::size_t i = 0; i < frame.detections.size(); ++i) {
-        frame.detections[i].id = static_cast<std::uint32_t>(i + 1);
+        if (frame.detections[i].id == 0) {
+            frame.detections[i].id = static_cast<std::uint32_t>(i + 1);
+        }
     }
 }
 

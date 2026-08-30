@@ -19,7 +19,8 @@ jobs:
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release \
             -DFOVEA_ENABLE_QT=OFF \
-            -DFOVEA_ENABLE_ONNX=OFF
+            -DFOVEA_ENABLE_ONNX=OFF \
+            -DFOVEA_ENABLE_VIDEO=OFF
 
       - name: Build
         run: cmake --build build --config Release

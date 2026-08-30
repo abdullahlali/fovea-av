@@ -44,7 +44,18 @@ SceneFrame frame = capture_.load_frame({.image_path = "street.jpg"});
 
 ---
 
-### 3. Scene Graph (`scene_graph.cpp`)
+### 3. Tracker (`tracker.cpp`) — video
+
+**What:** Maintain stable object IDs across frames and estimate velocity.
+
+**How:** IoU matching between consecutive detections (same label, IoU ≥ 0.3).  
+Velocity = pixel displacement / Δt from bbox centers.
+
+**Output:** `detection.id` persists frame-to-frame; `detection.velocity` feeds the predictor.
+
+---
+
+### 4. Scene Graph (`scene_graph.cpp`)
 
 **What:** Normalize detections into a stable structure.
 
@@ -56,18 +67,18 @@ This is the **contract** between perception and UI/AI layers.
 
 ---
 
-### 4. Predictor (`predictor.cpp`)
+### 5. Predictor (`predictor.cpp`)
 
 **What:** Show where objects will be in ~2 seconds.
 
 **How:** `future_position = current_position + velocity × 2s`  
-(Velocity is 0 for still images — ghosts overlap boxes until we add video tracking.)
+On still images velocity is 0 (ghosts overlap boxes). On video, tracker supplies real velocity.
 
 **Output:** `frame.predictions[]` — future bounding boxes.
 
 ---
 
-### 5. Grok (`grok_client.cpp`)
+### 6. Grok (`grok_client.cpp`)
 
 **What:** Plain-language explanation for passengers.
 
@@ -82,12 +93,14 @@ This is the **contract** between perception and UI/AI layers.
 
 ---
 
-### 6. Render
+### 7. Render
 
 | App | File | What it does |
 |-----|------|--------------|
 | CLI | `main.cpp` | Prints JSON + metrics |
-| Qt | `scene_window.cpp` | Draws image, gold boxes, dashed ghosts, Grok panel |
+| Qt (image) | `scene_window.cpp` | Single-frame view |
+| Qt (video) | `video_window.cpp` | Play/pause, scrubber, live tracking |
+| Svelte panel | `panel/src/App.svelte` | Passenger UI via WebSocket (`--panel`) |
 
 ---
 
@@ -112,8 +125,10 @@ core/
     scene_graph.cpp← IDs + JSON
     predictor.cpp  ← future ghosts
     grok_client.cpp← xAI API
+    tracker.cpp    ← IoU tracking + velocity
+    video_capture.cpp ← OpenCV frame reader (optional)
     pipeline.cpp   ← orchestrates everything
-app/               ← Qt UI only
+app/               ← Qt UI (scene + video windows)
 models/            ← yolov8n.onnx (not in git)
 assets/test/       ← sample images
 ```
@@ -126,6 +141,7 @@ assets/test/       ← sample images
 |------|---------|--------|
 | `FOVEA_ENABLE_ONNX` | ON | Real YOLO vs stub detections |
 | `FOVEA_ENABLE_QT` | ON | Build `fovea_app` |
+| `FOVEA_ENABLE_VIDEO` | ON | OpenCV video replay (requires OpenCV) |
 
 ---
 
@@ -135,14 +151,23 @@ assets/test/       ← sample images
 # Terminal debug
 ./build/core/fovea_cli assets/test/bdd/street.jpg --grok
 
-# Visual app
+# Visual app (image)
 ./build/app/fovea_app assets/test/bdd/street.jpg --grok
+
+# Visual app (video replay — requires OpenCV)
+python3 scripts/download_sample_video.py
+./build/app/fovea_app assets/test/dashcam/street.mp4
+
+# Passenger panel (v0.6)
+./build/app/fovea_app assets/test/dashcam/street.mp4 --panel
+cd panel && nvm use && npm install && npm run dev
 ```
 
 ---
 
 ## What's next
 
-- [ ] Video frame loop + real velocity tracking
-- [ ] Svelte passenger panel (WebSocket from C++)
+- [x] Video frame loop + real velocity tracking
+- [x] Svelte passenger panel (WebSocket from C++)
+- [ ] Multi-camera inputs — reverse cam, 360° surround (v0.7–v0.8)
 - [ ] Scenario sandbox (drag hazards onto scene)

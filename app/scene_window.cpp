@@ -1,5 +1,7 @@
 #include "scene_window.hpp"
 
+#include "panel_bridge.hpp"
+
 #include <QPainter>
 #include <QPen>
 #include <QStatusBar>
@@ -117,8 +119,10 @@ void SceneCanvas::paintEvent(QPaintEvent* event) {
     }
 }
 
-SceneWindow::SceneWindow(const fovea::PipelineResult& result, QWidget* parent)
-    : QMainWindow(parent) {
+SceneWindow::SceneWindow(const fovea::PipelineResult& result,
+                         const bool enable_panel,
+                         QWidget* parent)
+    : QMainWindow(parent), enable_panel_(enable_panel) {
     setWindowTitle("Fovea — Autonomy Visualization");
     resize(1280, 800);
 
@@ -159,6 +163,7 @@ SceneWindow::SceneWindow(const fovea::PipelineResult& result, QWidget* parent)
     setCentralWidget(central);
 
     canvas_->set_scene(to_qimage(result.frame.image), result.frame);
+    maybe_publish_panel(result, enable_panel_);
 
     statusBar()->showMessage(QString::fromStdString(result.frame.source_path));
 }
