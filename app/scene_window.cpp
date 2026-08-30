@@ -129,15 +129,33 @@ SceneWindow::SceneWindow(const fovea::PipelineResult& result, QWidget* parent)
     metrics_label_ = new QLabel(central);
     metrics_label_->setStyleSheet("color: #f5d66d; padding: 8px; font-family: Menlo, monospace;");
     metrics_label_->setText(
-        QString("capture: %1 ms | infer: %2 ms | predict: %3 ms | total: %4 ms | detections: %5")
+        QString("capture: %1 ms | infer: %2 ms | predict: %3 ms | grok: %4 ms | total: %5 ms | detections: %6")
             .arg(result.metrics.capture_ms, 0, 'f', 2)
             .arg(result.metrics.infer_ms, 0, 'f', 2)
             .arg(result.metrics.predict_ms, 0, 'f', 3)
+            .arg(result.metrics.grok_ms, 0, 'f', 2)
             .arg(result.metrics.total_ms, 0, 'f', 2)
             .arg(result.frame.detections.size()));
 
+    grok_label_ = new QLabel(central);
+    grok_label_->setWordWrap(true);
+    grok_label_->setStyleSheet(
+        "color: #f0f0f0; background: #1a1a1f; padding: 12px; border-top: 1px solid #3a3a44; "
+        "font-size: 14px;");
+    grok_label_->setVisible(result.grok.text.size() > 0);
+    if (!result.grok.text.empty()) {
+        QString grok_text = QString::fromStdString(result.grok.text);
+        if (!result.grok.error.empty()) {
+            grok_text = QString("[warning] %1\n\n%2")
+                            .arg(QString::fromStdString(result.grok.error),
+                                 grok_text);
+        }
+        grok_label_->setText(QString("Grok: %1").arg(grok_text));
+    }
+
     layout->addWidget(canvas_, 1);
     layout->addWidget(metrics_label_);
+    layout->addWidget(grok_label_);
     setCentralWidget(central);
 
     canvas_->set_scene(to_qimage(result.frame.image), result.frame);

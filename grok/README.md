@@ -1,41 +1,45 @@
-# Grok Integration
+# Grok API setup (cost-conscious)
 
-Fovea sends structured scene graph JSON to the xAI API for passenger-facing narration.
+## xAI console — recommended limits for `fovea-av`
 
-## Environment
+| Field | Recommendation | Why |
+|-------|----------------|-----|
+| **Name** | `fovea-av` | Good |
+| **Models** | `grok-4.20-0309-non-reasoning` only | Cheapest fit for short narration (no reasoning tokens) |
+| **Endpoints** | Chat completions only (if available) | Fovea only uses `/chat/completions` |
+| **Requests per minute** | `10`–`20` | Plenty for dev; stops runaway loops |
+| **Tokens per minute** | `20,000`–`50,000` | Caps burst spend |
+| **Expiry** | 90 days (optional) | Rotate keys for portfolio projects |
+
+Also set a **prepaid credit cap** in the xAI billing console if available.
+
+## Local setup (never commit the key)
 
 ```bash
-export XAI_API_KEY=your_key_here
+# In project root — already gitignored
+echo 'XAI_API_KEY=xai-...' > .env
+export $(grep -v '^#' .env | xargs)
 ```
 
-## API
+Or add to `~/.zshrc` (less ideal — global):
 
-- Base URL: `https://api.x.ai/v1`
-- Model: `grok-4.6`
-
-## Request Shape
-
-```json
-{
-  "model": "grok-4.6",
-  "input": [
-    {
-      "type": "text",
-      "text": "You are an in-vehicle autonomy copilot. Given this scene graph, explain what the vehicle should do in 2-3 sentences.\n\n<scene_json>"
-    }
-  ]
-}
+```bash
+export XAI_API_KEY="xai-..."
 ```
 
-## Implementation Status
+## What Fovea already does to save cost
 
-- `core/src/grok_client.cpp` — offline-safe stub with `XAI_API_KEY` detection
-- Next: HTTP client via libcurl or cpp-httplib
+- Sends **scene graph JSON only** (not the full image) — small input
+- **`max_tokens: 120`** — short passenger-facing answers
+- **`grok-4.20-0309-non-reasoning`** default — cheap, no reasoning overhead for 2–3 sentence answers
+- **`temperature: 0.2`** — consistent, less rambling
+- Grok only runs with **`--grok`** flag — normal runs are free
 
-## Planned Function Calls
+## Rough cost mental model
 
-- `get_detection(id)`
-- `get_prediction(id)`
-- `list_high_threat_objects()`
+One narration ≈ a few hundred input tokens + ≤120 output tokens.  
+At dev volume (dozens of runs), expect **cents not dollars** if limits are set.
 
-This enables Grok Q&A against live C++ scene state.
+## If you hit limits
+
+Console returns HTTP 429 — Fovea will show the error in CLI/Qt. Wait a minute or raise RPM slightly.

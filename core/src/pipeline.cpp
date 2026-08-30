@@ -38,9 +38,12 @@ PipelineResult Pipeline::process_image(const std::string& image_path,
     const auto predict_end = std::chrono::steady_clock::now();
 
     if (options.enable_grok) {
+        const auto grok_start = std::chrono::steady_clock::now();
         GrokRequest grok_request{};
         grok_request.scene_json = scene_graph_.to_json(result.frame);
         result.grok = grok_.narrate(grok_request);
+        const auto grok_end = std::chrono::steady_clock::now();
+        result.metrics.grok_ms = elapsed_ms(grok_start, grok_end);
     }
 
     const auto total_end = std::chrono::steady_clock::now();

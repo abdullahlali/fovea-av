@@ -22,6 +22,9 @@ add_library(fovea_core STATIC ${FOVEA_CORE_SOURCES} ${FOVEA_CORE_HEADERS})
 target_include_directories(fovea_core PUBLIC include)
 target_include_directories(fovea_core PRIVATE ${CMAKE_SOURCE_DIR}/third_party)
 
+find_package(CURL REQUIRED)
+target_link_libraries(fovea_core PUBLIC CURL::libcurl)
+
 if(FOVEA_ENABLE_ONNX)
     find_package(onnxruntime CONFIG QUIET)
     if(NOT onnxruntime_FOUND)

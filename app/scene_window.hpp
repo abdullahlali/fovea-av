@@ -32,6 +32,7 @@ public:
 private:
     SceneCanvas* canvas_ = nullptr;
     QLabel* metrics_label_ = nullptr;
+    QLabel* grok_label_ = nullptr;
 };
 
 QImage to_qimage(const fovea::ImageBuffer& image);
