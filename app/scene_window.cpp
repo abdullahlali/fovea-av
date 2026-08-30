@@ -165,5 +165,7 @@ SceneWindow::SceneWindow(const fovea::PipelineResult& result,
     canvas_->set_scene(to_qimage(result.frame.image), result.frame);
     maybe_publish_panel(result, enable_panel_);
 
-    statusBar()->showMessage(QString::fromStdString(result.frame.source_path));
+    const QString path_msg = QString::fromStdString(result.frame.source_path);
+    statusBar()->showMessage(
+        panel_status_hint(enable_panel_).isEmpty() ? path_msg : panel_status_hint(enable_panel_));
 }

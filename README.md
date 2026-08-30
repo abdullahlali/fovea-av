@@ -45,6 +45,8 @@ cd panel && nvm use && npm install && npm run dev
 
 See [docs/how-it-works.md](docs/how-it-works.md) for the pipeline walkthrough.
 
+**Two displays, one pipeline:** [docs/cabin-ui.md](docs/cabin-ui.md) explains how the Qt driver window and Svelte passenger panel work together.
+
 ## Architecture
 
 ```

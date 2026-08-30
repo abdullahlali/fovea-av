@@ -54,7 +54,8 @@ VideoWindow::VideoWindow(const std::string& video_path,
     const int interval_ms = std::max(1, static_cast<int>(1000.0 / video_.fps()));
     timer_.setInterval(interval_ms);
 
-    statusBar()->showMessage(QString::fromStdString(video_path));
+    const QString status = panel_status_hint(enable_panel_);
+    statusBar()->showMessage(status.isEmpty() ? QString::fromStdString(video_path) : status);
     show_frame(0);
 }
 

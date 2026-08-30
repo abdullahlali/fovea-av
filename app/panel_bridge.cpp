@@ -97,3 +97,11 @@ void maybe_publish_panel(const fovea::PipelineResult& result, const bool enabled
         PanelBridge::instance().publish(result);
     }
 }
+
+QString panel_status_hint(const bool enabled) {
+    if (!enabled) {
+        return {};
+    }
+    return QStringLiteral(
+        "Driver display · Passenger panel: http://localhost:5173 (ws://127.0.0.1:8765)");
+}

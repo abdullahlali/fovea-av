@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfovea_core.a CMakeFiles/fovea_core.dir/src/capture.cpp.o CMakeFiles/fovea_core.dir/src/scene_graph.cpp.o CMakeFiles/fovea_core.dir/src/predictor.cpp.o CMakeFiles/fovea_core.dir/src/infer.cpp.o CMakeFiles/fovea_core.dir/src/grok_client.cpp.o CMakeFiles/fovea_core.dir/src/pipeline.cpp.o CMakeFiles/fovea_core.dir/src/tracker.cpp.o
-/usr/bin/ranlib libfovea_core.a

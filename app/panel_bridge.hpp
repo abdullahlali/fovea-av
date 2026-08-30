@@ -27,3 +27,5 @@ private:
 };
 
 void maybe_publish_panel(const fovea::PipelineResult& result, bool enabled);
+
+QString panel_status_hint(bool enabled);
