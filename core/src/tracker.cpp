@@ -32,7 +32,6 @@ float Tracker::intersection_over_union(const BoundingBox& a, const BoundingBox& 
 
 void Tracker::update(SceneFrame& frame, double timestamp_seconds) {
     if (frame.detections.empty()) {
-        previous_detections_.clear();
         previous_timestamp_seconds_ = timestamp_seconds;
         return;
     }

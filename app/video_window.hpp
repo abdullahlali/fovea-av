@@ -45,5 +45,9 @@ private:
     int current_frame_ = 0;
     bool playing_ = false;
     bool enable_panel_ = false;
+
+    bool grok_enabled_ = false;
+    fovea::GrokResponse cached_grok_{};
+    int last_grok_frame_ = -1;
 #endif
 };

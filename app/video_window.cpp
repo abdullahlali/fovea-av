@@ -8,6 +8,8 @@
 #include <QStatusBar>
 #include <QVBoxLayout>
 
+#include <cmath>
+
 VideoWindow::VideoWindow(const std::string& video_path,
                          const bool enable_grok,
                          const bool enable_panel,
@@ -17,6 +19,7 @@ VideoWindow::VideoWindow(const std::string& video_path,
     resize(1280, 860);
 
     options_.enable_grok = enable_grok;
+    grok_enabled_ = enable_grok;
     video_.open(video_path);
     pipeline_.reset_tracking();
 
@@ -65,20 +68,46 @@ void VideoWindow::show_frame(int frame_index) {
     slider_->setValue(frame_index);
     slider_->blockSignals(false);
 
-    const auto result = pipeline_.process_video_frame(video_, frame_index, options_);
+    fovea::PipelineOptions frame_options = options_;
+    const int grok_interval_frames =
+        std::max(1, static_cast<int>(std::lround(video_.fps() * 3.0)));
+    const bool should_refresh_grok =
+        grok_enabled_ &&
+        (last_grok_frame_ < 0 ||
+         std::abs(frame_index - last_grok_frame_) >= grok_interval_frames);
+    frame_options.enable_grok = should_refresh_grok;
+
+    auto result = pipeline_.process_video_frame(video_, frame_index, frame_options);
+
+    if (grok_enabled_ && !should_refresh_grok) {
+        result.grok = cached_grok_;
+    } else if (grok_enabled_ && should_refresh_grok) {
+        cached_grok_ = result.grok;
+        last_grok_frame_ = frame_index;
+    }
+
     canvas_->set_scene(to_qimage(result.frame.image), result.frame);
 
     metrics_label_->setText(
-        QString("frame: %1/%2 | capture: %3 ms | infer: %4 ms | total: %5 ms | detections: %6")
+        QString("frame: %1/%2 | capture: %3 ms | infer: %4 ms | grok: %5 ms | total: %6 ms | detections: %7")
             .arg(frame_index + 1)
             .arg(video_.frame_count())
             .arg(result.metrics.capture_ms, 0, 'f', 2)
             .arg(result.metrics.infer_ms, 0, 'f', 2)
+            .arg(result.metrics.grok_ms, 0, 'f', 0)
             .arg(result.metrics.total_ms, 0, 'f', 2)
             .arg(result.frame.detections.size()));
 
-    if (options_.enable_grok && !result.grok.text.empty()) {
-        grok_label_->setText(QString("Grok: %1").arg(QString::fromStdString(result.grok.text)));
+    if (grok_enabled_) {
+        QString grok_text = QString::fromStdString(result.grok.text);
+        if (!result.grok.error.empty()) {
+            grok_text = QString("[%1] %2")
+                            .arg(QString::fromStdString(result.grok.error),
+                                 grok_text);
+        }
+        if (!grok_text.isEmpty()) {
+            grok_label_->setText(QString("Grok: %1").arg(grok_text));
+        }
     }
 
     maybe_publish_panel(result, enable_panel_);
