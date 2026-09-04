@@ -5,14 +5,16 @@
 #include "fovea/infer.hpp"
 #include "fovea/predictor.hpp"
 #include "fovea/scene_graph.hpp"
+#include "fovea/scenario.hpp"
 #include "fovea/tracker.hpp"
 #include "fovea/types.hpp"
+
+#include <optional>
+#include <string>
 
 #if defined(FOVEA_HAS_VIDEO)
 #include "fovea/video_capture.hpp"
 #endif
-
-#include <string>
 
 namespace fovea {
 
@@ -20,6 +22,7 @@ struct PipelineOptions {
     bool enable_grok = false;
     bool print_json = true;
     bool enable_tracking = true;
+    std::string scenario_path;
 };
 
 struct PipelineResult {
@@ -42,9 +45,12 @@ public:
         SceneFrame frame,
         const PipelineOptions& options = {}) const;
 
+    // Grok narration only — does not re-run inference on the frame.
+    [[nodiscard]] GrokResponse narrate_scene(const SceneFrame& frame) const;
+
 #if defined(FOVEA_HAS_VIDEO)
     [[nodiscard]] PipelineResult process_video_frame(
-        const VideoCapture& video,
+        VideoCapture& video,
         int frame_index,
         const PipelineOptions& options = {}) const;
 #endif
@@ -56,6 +62,8 @@ private:
     mutable SceneGraph scene_graph_;
     mutable GrokClient grok_;
     mutable Tracker tracker_;
+    mutable std::optional<Scenario> loaded_scenario_;
+    mutable std::string loaded_scenario_path_;
 };
 
 }  // namespace fovea

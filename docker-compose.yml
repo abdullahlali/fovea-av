@@ -1,0 +1,9 @@
+services:
+  fovea:
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - FOVEA_PANEL_DIST=/app/panel/dist/index.html
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    network_mode: host

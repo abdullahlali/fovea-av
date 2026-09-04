@@ -1,0 +1,12 @@
+{
+  "name": "pedestrian_behind_vehicle",
+  "description": "Synthetic child behind a parked car — appears from frame 60 onward.",
+  "hazards": [
+    {
+      "label": "person",
+      "confidence": 0.91,
+      "trigger_frame": 60,
+      "bbox": { "x": 540, "y": 420, "width": 72, "height": 150 }
+    }
+  ]
+}

@@ -11,6 +11,7 @@
 #include <QTimer>
 
 #if defined(FOVEA_HAS_VIDEO)
+#include "fovea/camera_view.hpp"
 #include "fovea/video_capture.hpp"
 #endif
 
@@ -19,7 +20,12 @@ class VideoWindow : public QMainWindow {
 
 public:
 #if defined(FOVEA_HAS_VIDEO)
-    VideoWindow(const std::string& video_path, bool enable_grok, bool enable_panel, QWidget* parent = nullptr);
+    VideoWindow(const std::string& video_path,
+                bool enable_grok,
+                bool enable_panel,
+                const std::string& scenario_path,
+                const fovea::CameraProfile& camera,
+                QWidget* parent = nullptr);
 #endif
 
 private slots:
@@ -49,5 +55,6 @@ private:
     bool grok_enabled_ = false;
     fovea::GrokResponse cached_grok_{};
     int last_grok_frame_ = -1;
+    fovea::CameraProfile camera_{};
 #endif
 };

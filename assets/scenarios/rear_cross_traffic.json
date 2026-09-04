@@ -1,0 +1,12 @@
+{
+  "name": "rear_cross_traffic",
+  "description": "Vehicle approaching from behind while reversing — use with --camera reverse.",
+  "hazards": [
+    {
+      "label": "car",
+      "confidence": 0.86,
+      "trigger_frame": 45,
+      "bbox": { "x": 300, "y": 180, "width": 220, "height": 140 }
+    }
+  ]
+}

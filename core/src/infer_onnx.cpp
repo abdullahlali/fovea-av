@@ -85,6 +85,35 @@ float intersection_over_union(const Candidate& a, const Candidate& b) {
     return union_area <= 0.0F ? 0.0F : intersection / union_area;
 }
 
+bool is_driving_relevant_class(int class_id) {
+    switch (class_id) {
+        case 0:   // person
+        case 1:   // bicycle
+        case 2:   // car
+        case 3:   // motorcycle
+        case 5:   // bus
+        case 7:   // truck
+        case 9:   // traffic_light
+        case 11:  // stop_sign
+            return true;
+        default:
+            return false;
+    }
+}
+
+bool is_vehicle_class(int class_id) {
+    switch (class_id) {
+        case 1:  // bicycle
+        case 2:  // car
+        case 3:  // motorcycle
+        case 5:  // bus
+        case 7:  // truck
+            return true;
+        default:
+            return false;
+    }
+}
+
 std::vector<Candidate> non_max_suppression(std::vector<Candidate> candidates,
                                            float threshold) {
     std::sort(candidates.begin(), candidates.end(),
@@ -104,7 +133,12 @@ std::vector<Candidate> non_max_suppression(std::vector<Candidate> candidates,
             if (suppressed[j]) {
                 continue;
             }
-            if (candidates[i].class_id != candidates[j].class_id) {
+            // Cross-class NMS for vehicles so truck/bus/car on the same object don't fight.
+            const bool compatible =
+                candidates[i].class_id == candidates[j].class_id ||
+                (is_vehicle_class(candidates[i].class_id) &&
+                 is_vehicle_class(candidates[j].class_id));
+            if (!compatible) {
                 continue;
             }
             if (intersection_over_union(candidates[i], candidates[j]) > threshold) {
@@ -122,22 +156,6 @@ BoundingBox remap_bbox(const Candidate& candidate, const Letterbox& letterbox) {
     const float width = candidate.width / letterbox.scale;
     const float height = candidate.height / letterbox.scale;
     return BoundingBox{x, y, width, height};
-}
-
-bool is_driving_relevant_class(int class_id) {
-    switch (class_id) {
-        case 0:   // person
-        case 1:   // bicycle
-        case 2:   // car
-        case 3:   // motorcycle
-        case 5:   // bus
-        case 7:   // truck
-        case 9:   // traffic_light
-        case 11:  // stop_sign
-            return true;
-        default:
-            return false;
-    }
 }
 
 BoundingBox clamp_bbox(const BoundingBox& bbox, int image_width, int image_height) {

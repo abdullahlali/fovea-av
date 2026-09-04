@@ -13,12 +13,15 @@
 VideoWindow::VideoWindow(const std::string& video_path,
                          const bool enable_grok,
                          const bool enable_panel,
+                         const std::string& scenario_path,
+                         const fovea::CameraProfile& camera,
                          QWidget* parent)
-    : QMainWindow(parent), enable_panel_(enable_panel) {
-    setWindowTitle("Fovea — Video Replay");
+    : QMainWindow(parent), enable_panel_(enable_panel), camera_(camera) {
+    setWindowTitle(QString("Fovea — %1").arg(QString::fromStdString(camera.label)));
     resize(1280, 860);
 
     options_.enable_grok = enable_grok;
+    options_.scenario_path = scenario_path;
     grok_enabled_ = enable_grok;
     video_.open(video_path);
     pipeline_.reset_tracking();
@@ -132,9 +135,8 @@ void VideoWindow::on_slider_changed(int value) {
 
 void VideoWindow::on_tick() {
     if (current_frame_ + 1 >= video_.frame_count()) {
-        playing_ = false;
-        play_button_->setText("Play");
-        timer_.stop();
+        pipeline_.reset_tracking();
+        show_frame(0);
         return;
     }
     show_frame(current_frame_ + 1);

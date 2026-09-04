@@ -1,8 +1,10 @@
 #include "fovea/pipeline.hpp"
 
 #include "fovea/capture.hpp"
+#include "fovea/scenario.hpp"
 
 #include <chrono>
+#include <optional>
 
 namespace fovea {
 
@@ -36,6 +38,15 @@ PipelineResult Pipeline::process_frame(SceneFrame frame,
         tracker_.update(result.frame, result.frame.timestamp_seconds);
     }
     scene_graph_.update(result.frame);
+
+    if (!options.scenario_path.empty()) {
+        if (!loaded_scenario_ || loaded_scenario_path_ != options.scenario_path) {
+            loaded_scenario_ = load_scenario(options.scenario_path);
+            loaded_scenario_path_ = options.scenario_path;
+        }
+        apply_scenario(result.frame, *loaded_scenario_);
+        scene_graph_.update(result.frame);
+    }
 
     const auto predict_start = std::chrono::steady_clock::now();
     predictor_.apply(result.frame);
@@ -72,8 +83,14 @@ PipelineResult Pipeline::process_image(const std::string& image_path,
     return result;
 }
 
+GrokResponse Pipeline::narrate_scene(const SceneFrame& frame) const {
+    GrokRequest grok_request{};
+    grok_request.scene_json = scene_graph_.to_json(frame);
+    return grok_.narrate(grok_request);
+}
+
 #if defined(FOVEA_HAS_VIDEO)
-PipelineResult Pipeline::process_video_frame(const VideoCapture& video,
+PipelineResult Pipeline::process_video_frame(VideoCapture& video,
                                              int frame_index,
                                              const PipelineOptions& options) const {
     const auto capture_start = std::chrono::steady_clock::now();

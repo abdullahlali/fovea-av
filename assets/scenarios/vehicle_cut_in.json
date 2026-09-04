@@ -1,0 +1,12 @@
+{
+  "name": "vehicle_cut_in",
+  "description": "Sudden vehicle entering lane ahead — hazard hunt demo on forward dashcam.",
+  "hazards": [
+    {
+      "label": "car",
+      "confidence": 0.88,
+      "trigger_frame": 90,
+      "bbox": { "x": 280, "y": 260, "width": 180, "height": 120 }
+    }
+  ]
+}

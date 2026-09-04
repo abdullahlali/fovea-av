@@ -6,6 +6,9 @@ set(FOVEA_CORE_SOURCES
     src/grok_client.cpp
     src/pipeline.cpp
     src/tracker.cpp
+    src/camera_view.cpp
+    src/scenario.cpp
+    src/env.cpp
 )
 
 set(FOVEA_CORE_HEADERS
@@ -18,6 +21,9 @@ set(FOVEA_CORE_HEADERS
     include/fovea/types.hpp
     include/fovea/coco_labels.hpp
     include/fovea/tracker.hpp
+    include/fovea/camera_view.hpp
+    include/fovea/scenario.hpp
+    include/fovea/env.hpp
 )
 
 add_library(fovea_core STATIC ${FOVEA_CORE_SOURCES} ${FOVEA_CORE_HEADERS})

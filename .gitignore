@@ -1,6 +1,7 @@
 # Build
 build/
 build-ci/
+build_test/
 cmake-build-*/
 out/
 compile_commands.json
@@ -12,7 +13,7 @@ compile_commands.json
 # IDE
 .idea/
 .vscode/
-*.user
+*.xcuserdata
 *.swp
 *.swo
 
@@ -32,6 +33,10 @@ panel/node_modules/
 panel/.svelte-kit/
 panel/build/
 panel/dist/
+
+# Python
+**/__pycache__/
+*.pyc
 
 # Test outputs
 assets/output/

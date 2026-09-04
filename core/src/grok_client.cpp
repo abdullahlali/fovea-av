@@ -171,7 +171,9 @@ GrokResponse GrokClient::narrate(const GrokRequest& request) const {
     if (http_code < 200 || http_code >= 300) {
         response.ok = false;
         response.error = "Grok API returned HTTP " + std::to_string(http_code);
-        response.text = response_body;
+        if (response_body.find("Incorrect API key") != std::string::npos) {
+            response.error += " — check XAI_API_KEY in .env";
+        }
         return response;
     }
 
@@ -181,7 +183,6 @@ GrokResponse GrokClient::narrate(const GrokRequest& request) const {
     } catch (const std::exception& error) {
         response.ok = false;
         response.error = error.what();
-        response.text = response_body;
     }
 
     return response;

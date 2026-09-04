@@ -9,8 +9,8 @@ namespace fovea {
 
 struct InferConfig {
     std::string model_path = "models/yolov8n.onnx";
-    float confidence_threshold = 0.40F;
-    float nms_threshold = 0.45F;
+    float confidence_threshold = 0.32F;
+    float nms_threshold = 0.50F;
     float max_box_area_ratio = 0.55F;
     int input_size = 640;
 };

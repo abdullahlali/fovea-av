@@ -1,5 +1,6 @@
 #pragma once
 
+#include "fovea/camera_view.hpp"
 #include "fovea/pipeline.hpp"
 
 #include <QImage>
@@ -29,6 +30,7 @@ class SceneWindow : public QMainWindow {
 public:
     explicit SceneWindow(const fovea::PipelineResult& result,
                          bool enable_panel = false,
+                         const fovea::CameraProfile& camera = fovea::camera_profile(fovea::CameraView::Forward),
                          QWidget* parent = nullptr);
 
 private:

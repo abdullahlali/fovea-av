@@ -1,78 +1,36 @@
 :root {
-  --bg-root: #050506;
-  --bg-shell: #0c0c0e;
-  --bg-card: #141416;
-  --bg-card-raised: #1a1a1e;
-  --bg-inset: #080809;
-  --bg-rail: #0f0f11;
-
-  --line: rgba(255, 255, 255, 0.07);
-  --line-strong: rgba(255, 255, 255, 0.12);
-
-  --text-primary: #ffffff;
-  --text-secondary: #c8c8cc;
-  --text-muted: #7a7a80;
-
-  --brand: #3e6ae1;
-  --brand-soft: rgba(62, 106, 225, 0.14);
-  --brand-glow: rgba(62, 106, 225, 0.35);
-
-  --live: #3dd68c;
-  --live-soft: rgba(61, 214, 140, 0.12);
-
-  --radius-card: 20px;
-  --radius-control: 12px;
-  --radius-pill: 999px;
-
-  --font-ui: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-data: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-
-  --shadow-card: 0 24px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--line);
-  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-
-  --text-display: 1.75rem;
-  --text-title: 1.0625rem;
-  --text-body: 1rem;
-  --text-caption: 0.8125rem;
-  --text-micro: 0.6875rem;
+  --bg: #070708;
+  --surface: #111113;
+  --elevated: #18181b;
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #fafafa;
+  --muted: #a1a1aa;
+  --dim: #71717a;
+  --accent: #ffffff;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --crit: #f87171;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 :global(html),
 :global(body) {
   margin: 0;
   height: 100%;
-  font-family: var(--font-ui);
-  font-size: var(--text-body);
-  line-height: 1.5;
-  background: var(--bg-root);
-  color: var(--text-primary);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
-  font-synthesis: none;
 }
 
-:global(*) {
-  box-sizing: border-box;
-}
-
-:global(h1),
-:global(h2),
-:global(h3),
-:global(p),
-:global(button),
-:global(span) {
-  font-family: var(--font-ui);
-}
+:global(*) { box-sizing: border-box; }
 
 :global(button) {
   font: inherit;
   color: inherit;
   border: none;
   background: none;
-  padding: 0;
   cursor: pointer;
-}
-
-:global(::selection) {
-  background: var(--brand-soft);
-  color: var(--text-primary);
+  -webkit-tap-highlight-color: transparent;
 }

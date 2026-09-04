@@ -1,0 +1,11 @@
+{
+  "name": "cyclist_ahead",
+  "description": "Cyclist crossing ahead — persistent hazard for still-image demos.",
+  "hazards": [
+    {
+      "label": "person",
+      "confidence": 0.84,
+      "bbox": { "x": 420, "y": 310, "width": 48, "height": 110 }
+    }
+  ]
+}

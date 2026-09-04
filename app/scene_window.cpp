@@ -76,7 +76,7 @@ void SceneCanvas::paintEvent(QPaintEvent* event) {
     const float scale_y =
         static_cast<float>(image_rect.height()) / static_cast<float>(image_.height());
 
-  auto draw_box = [&](const fovea::BoundingBox& bbox, float confidence, bool ghost) {
+  auto draw_box = [&](const fovea::BoundingBox& bbox, float confidence, bool ghost, bool scenario) {
         const QRectF box{
             image_rect.left() + bbox.x * scale_x,
             image_rect.top() + bbox.y * scale_y,
@@ -84,7 +84,8 @@ void SceneCanvas::paintEvent(QPaintEvent* event) {
             bbox.height * scale_y,
         };
 
-        QPen pen(confidence_color(confidence), ghost ? 2.0 : 3.0);
+        QColor color = scenario ? QColor(255, 92, 92, 220) : confidence_color(confidence);
+        QPen pen(color, ghost ? 2.0 : 3.0);
         if (ghost) {
             pen.setStyle(Qt::DashLine);
             pen.setColor(QColor(255, 255, 255, 140));
@@ -95,11 +96,12 @@ void SceneCanvas::paintEvent(QPaintEvent* event) {
     };
 
     for (const auto& prediction : frame_.predictions) {
-        draw_box(prediction.bbox, 0.5F, true);
+        draw_box(prediction.bbox, 0.5F, true, false);
     }
 
     for (const auto& detection : frame_.detections) {
-        draw_box(detection.bbox, detection.confidence, false);
+        const bool scenario = detection.id >= 9000;
+        draw_box(detection.bbox, detection.confidence, false, scenario);
 
         const QRectF box{
             image_rect.left() + detection.bbox.x * scale_x,
@@ -109,21 +111,23 @@ void SceneCanvas::paintEvent(QPaintEvent* event) {
         };
 
         const QString label = QString::fromStdString(detection.label) +
-                              QString(" %1%").arg(static_cast<int>(detection.confidence * 100.0F));
+                              QString(" %1%").arg(static_cast<int>(detection.confidence * 100.0F)) +
+                              (scenario ? QStringLiteral(" · scenario") : QString());
         painter.setPen(Qt::NoPen);
         painter.setBrush(QColor(0, 0, 0, 170));
         const QRectF text_rect = painter.boundingRect(box, Qt::AlignLeft | Qt::AlignTop, label);
         painter.drawRect(text_rect.adjusted(-4, -2, 4, 2));
-        painter.setPen(QColor(255, 220, 120));
+        painter.setPen(scenario ? QColor(255, 170, 170) : QColor(255, 220, 120));
         painter.drawText(text_rect, Qt::AlignLeft | Qt::AlignTop, label);
     }
 }
 
 SceneWindow::SceneWindow(const fovea::PipelineResult& result,
                          const bool enable_panel,
+                         const fovea::CameraProfile& camera,
                          QWidget* parent)
     : QMainWindow(parent), enable_panel_(enable_panel) {
-    setWindowTitle("Fovea — Autonomy Visualization");
+    setWindowTitle(QString("Fovea — %1").arg(QString::fromStdString(camera.label)));
     resize(1280, 800);
 
     auto* central = new QWidget(this);

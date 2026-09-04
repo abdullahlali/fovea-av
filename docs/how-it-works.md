@@ -169,5 +169,6 @@ cd panel && nvm use && npm install && npm run dev
 
 - [x] Video frame loop + real velocity tracking
 - [x] Svelte passenger panel (WebSocket from C++)
-- [ ] Multi-camera inputs — reverse cam, 360° surround (v0.7–v0.8)
-- [ ] Scenario sandbox (drag hazards onto scene)
+- [x] Reverse camera (`--camera reverse`)
+- [x] Scenario sandbox (`--scenario` JSON hazards)
+- [x] 360° surround view (v0.8)

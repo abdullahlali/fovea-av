@@ -1,36 +1,34 @@
-# Svelte passenger panel — v0.6
+# Passenger panel
 
-Professional split-screen cabin UI fed by the C++ WebSocket bridge. Design follows automotive HMI principles: high contrast, glance-safe typography, and Tesla v12–inspired layout (status bar, camera strip, latency readouts).
+Svelte 5 UI for the rear/passenger display. Connects to `fovea_app --panel` over WebSocket.
 
-## Requirements
-
-Node.js **18+** (see `.nvmrc`).
+## Run
 
 ```bash
-nvm use   # from panel/
+# Terminal 1
+./build/app/fovea_app assets/test/dashcam/street.mp4 --panel --grok
+
+# Terminal 2
+cd panel && npm install && npm run dev
 ```
 
-## Dev
+Open http://localhost:5173
+
+## Features
+
+| Feature | Status |
+|---------|--------|
+| Live scene JSON from driver app | ✅ |
+| Grok narration | ✅ |
+| Object list with hold/smoothing | ✅ |
+| Camera mode rail (forward / reverse / surround) | ✅ |
+| Trust pulse (confidence meter) | ✅ |
+| WebSocket auto-reconnect | ✅ |
+
+The panel does **not** replay video — that stays on the Qt driver display.
+
+## Env
 
 ```bash
-# Terminal 1 — Qt app with panel bridge
-./build/app/fovea_app assets/test/dashcam/street.mp4 --panel
-
-# Terminal 2 — passenger UI
-cd panel
-nvm use
-npm install
-npm run dev
+VITE_FOVEA_WS_URL=ws://127.0.0.1:8765 npm run dev
 ```
-
-Open http://localhost:5173 — connects to `ws://127.0.0.1:8765`.
-
-## Camera views (roadmap)
-
-| View | Status |
-|------|--------|
-| Forward dashcam | ✅ v0.6 (current default) |
-| Reverse camera | 🔜 v0.7+ |
-| 360° surround | 🔜 v0.8+ (FoveaLens) |
-
-The panel shows the camera strip now; only forward is wired to the pipeline today.
